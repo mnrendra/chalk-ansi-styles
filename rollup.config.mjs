@@ -19,7 +19,7 @@ export default [
       }
     ],
     plugins: [
-      esbuild({ minify: false }),
+      esbuild({ minify: true }),
       mixeport()
     ],
     onwarn ({ code }) {

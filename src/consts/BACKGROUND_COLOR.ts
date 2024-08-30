@@ -1,0 +1,25 @@
+export const BACKGROUND_COLOR_CLOSE = 49
+
+const BACKGROUND_COLOR = {
+  bgBlack: [40, BACKGROUND_COLOR_CLOSE],
+  bgRed: [41, BACKGROUND_COLOR_CLOSE],
+  bgGreen: [42, BACKGROUND_COLOR_CLOSE],
+  bgYellow: [43, BACKGROUND_COLOR_CLOSE],
+  bgBlue: [44, BACKGROUND_COLOR_CLOSE],
+  bgMagenta: [45, BACKGROUND_COLOR_CLOSE],
+  bgCyan: [46, BACKGROUND_COLOR_CLOSE],
+  bgWhite: [47, BACKGROUND_COLOR_CLOSE],
+  // Bright color
+  bgGray: [100, BACKGROUND_COLOR_CLOSE], // Alias of `bgBlackBright`
+  bgGrey: [100, BACKGROUND_COLOR_CLOSE], // Alias of `bgBlackBright`
+  bgBlackBright: [100, BACKGROUND_COLOR_CLOSE],
+  bgRedBright: [101, BACKGROUND_COLOR_CLOSE],
+  bgGreenBright: [102, BACKGROUND_COLOR_CLOSE],
+  bgYellowBright: [103, BACKGROUND_COLOR_CLOSE],
+  bgBlueBright: [104, BACKGROUND_COLOR_CLOSE],
+  bgMagentaBright: [105, BACKGROUND_COLOR_CLOSE],
+  bgCyanBright: [106, BACKGROUND_COLOR_CLOSE],
+  bgWhiteBright: [107, BACKGROUND_COLOR_CLOSE]
+} as const
+
+export default BACKGROUND_COLOR

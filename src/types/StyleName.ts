@@ -1,4 +1,4 @@
-import type ModifierName from './ModifierName'
+import type { ModifierName } from '../styles'
 import type ColorName from './ColorName'
 
 /**

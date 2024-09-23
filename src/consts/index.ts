@@ -1,15 +1,18 @@
+import ESCAPE from './ESCAPE'
+import LAYER from './LAYER'
 import MODIFIER from './MODIFIER'
 import FOREGROUND_COLOR, { FOREGROUND_COLOR_CLOSE } from './FOREGROUND_COLOR'
 import BACKGROUND_COLOR, { BACKGROUND_COLOR_CLOSE } from './BACKGROUND_COLOR'
-import LAYER from './LAYER'
-import ESCAPE from './ESCAPE'
+
+export type { Escape } from './ESCAPE'
+export type { Layer } from './LAYER'
 
 export {
+  ESCAPE,
+  LAYER,
   MODIFIER,
   FOREGROUND_COLOR,
   FOREGROUND_COLOR_CLOSE,
   BACKGROUND_COLOR,
-  BACKGROUND_COLOR_CLOSE,
-  LAYER,
-  ESCAPE
+  BACKGROUND_COLOR_CLOSE
 }

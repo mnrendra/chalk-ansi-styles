@@ -2,6 +2,13 @@
 
 Refactor the [ansi-styles](https://github.com/chalk/ansi-styles) code to **TypeScript** and ensure the output supports both **CommonJS (CJS)** and **ES Modules (ESM)** with mixed exports. This will allow users to `import` or `require` the module without needing to use `.default`.
 
+## Benefits
+- ✅ Supports both **CommonJS (CJS)** and **ES Modules (ESM)**
+- ✅ Mixed exports (No need to call `.default` to get the default value)
+- ✅ Minified distribution package
+- ✅ Well-tested (100% code coverage)
+- ✅ **TypeScript** source code for development
+
 ## Install
 ```bash
 npm i @mnrendra/chalk-ansi-styles
@@ -419,12 +426,12 @@ import type {
   Layer,
   CSPair,
   Modifier,
-  ForegroundColor,
-  BackgroundColor,
-  StyleNumbers,
   ModifierName,
+  ForegroundColor,
   ForegroundColorName,
+  BackgroundColor,
   BackgroundColorName,
+  StyleNumbers,
   ColorName,
   StyleName,
   Styles,

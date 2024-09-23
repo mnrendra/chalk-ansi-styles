@@ -25,4 +25,11 @@ const backgroundColor = {
 
 export type BackgroundColor = typeof backgroundColor
 
+/**
+ * Basic background color names.
+ *
+ * [More colors here.](https://github.com/chalk/chalk/blob/main/readme.md#256-and-truecolor-color-support)
+ */
+export type BackgroundColorName = keyof BackgroundColor
+
 export default backgroundColor

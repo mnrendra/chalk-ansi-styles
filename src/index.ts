@@ -1,6 +1,5 @@
-import type { AnsiStyles } from './types'
-
 import main, {
+  ansiStyles,
   modifierNames,
   foregroundColorNames,
   backgroundColorNames,
@@ -8,70 +7,39 @@ import main, {
 } from './main'
 
 export type {
-  Layer,
-  CSPair,
+  Layer
+} from './consts'
+
+export type {
+  CSPair
+} from './utils'
+
+export type {
   Modifier,
-  ForegroundColor,
-  BackgroundColor,
-  StyleNumbers,
   ModifierName,
+  ForegroundColor,
   ForegroundColorName,
-  BackgroundColorName,
+  BackgroundColor,
+  BackgroundColorName
+} from './styles'
+
+export type {
+  StyleNumbers,
   ColorName,
-  StyleName,
-  AnsiStyles
+  StyleName
 } from './types'
 
 export type {
+  AnsiStyles,
   Styles
 } from './main'
 
 export {
+  ansiStyles,
   modifierNames,
   foregroundColorNames,
   backgroundColorNames,
   colorNames
 }
-
-export const ansiStyles = main as AnsiStyles
-
-Object.defineProperties(main, {
-  ansiStyles: {
-    value: ansiStyles,
-    writable: true,
-    configurable: true,
-    enumerable: false
-  },
-  modifierNames: {
-    value: modifierNames,
-    writable: true,
-    configurable: true,
-    enumerable: false
-  },
-  foregroundColorNames: {
-    value: foregroundColorNames,
-    writable: true,
-    configurable: true,
-    enumerable: false
-  },
-  backgroundColorNames: {
-    value: backgroundColorNames,
-    writable: true,
-    configurable: true,
-    enumerable: false
-  },
-  colorNames: {
-    value: colorNames,
-    writable: true,
-    configurable: true,
-    enumerable: false
-  },
-  default: {
-    value: main,
-    writable: true,
-    configurable: true,
-    enumerable: false
-  }
-})
 
 export default main

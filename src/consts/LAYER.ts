@@ -3,4 +3,8 @@ const LAYER = {
   background: 48 // Background
 } as const
 
+export type Layer =
+| typeof LAYER['foreground']
+| typeof LAYER['background']
+
 export default LAYER

@@ -20,7 +20,7 @@ export default [
     ],
     plugins: [
       esbuild({ minify: true }),
-      mixeport()
+      mixeport({ minify: true })
     ],
     onwarn ({ code }) {
       if (code === 'MIXED_EXPORTS') return false

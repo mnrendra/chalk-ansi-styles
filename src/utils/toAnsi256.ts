@@ -1,4 +1,5 @@
-import type { Layer as Lyr } from '../types'
+import type { Layer as Lyr } from '../consts'
+
 import type { ANSI } from './toAnsi'
 
 import toAnsi from './toAnsi'

@@ -9,6 +9,7 @@ export type { ANSI } from './toAnsi'
 export type { ANSI16 } from './toAnsi16'
 export type { ANSI256 } from './toAnsi256'
 export type { ANSI16m } from './toAnsi16m'
+export type { CSPair } from './pairCS'
 
 export {
   toAnsi,

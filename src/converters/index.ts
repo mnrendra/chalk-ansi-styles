@@ -1,15 +1,15 @@
-import rgbToAnsi256 from './rgbToAnsi256'
-import hexToRgb from './hexToRgb'
-import hexToAnsi256 from './hexToAnsi256'
 import ansi256ToAnsi from './ansi256ToAnsi'
-import rgbToAnsi from './rgbToAnsi'
 import hexToAnsi from './hexToAnsi'
+import hexToAnsi256 from './hexToAnsi256'
+import hexToRgb from './hexToRgb'
+import rgbToAnsi from './rgbToAnsi'
+import rgbToAnsi256 from './rgbToAnsi256'
 
 export {
-  rgbToAnsi256,
-  hexToRgb,
-  hexToAnsi256,
   ansi256ToAnsi,
+  hexToAnsi,
+  hexToAnsi256,
+  hexToRgb,
   rgbToAnsi,
-  hexToAnsi
+  rgbToAnsi256
 }

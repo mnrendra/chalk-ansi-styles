@@ -1,4 +1,4 @@
-import type { AnsiStyles } from './types'
+import type { AnsiStyles } from './main'
 
 import index, {
   modifierNames,
@@ -799,7 +799,7 @@ describe('Test all features:', () => {
     })
   })
 
-  // converter
+  // converters
 
   describe('Test `ansi256ToAnsi` converter:', () => {
     const ansiStyles = index as AnsiStyles
@@ -969,7 +969,7 @@ describe('Test all features:', () => {
     })
   })
 
-  // names
+  // style names
 
   describe('Test style names:', () => {
     it('Should return modifier names when `modifierNames` is selected!', () => {

@@ -1,4 +1,4 @@
-import type { AnsiStyles } from './types'
+import type { AnsiStyles } from './main'
 
 import main, {
   modifierNames,
@@ -8,7 +8,7 @@ import main, {
 } from './main'
 
 describe('Test `main` feature:', () => {
-  it('Should only have modifier, foreground, and background keys!', () => {
+  it('Should only enumirate `styles` keys!', () => {
     const received = Object.keys(main)
 
     const expected = [
@@ -65,7 +65,7 @@ describe('Test `main` feature:', () => {
     expect(received).toEqual(expected)
   })
 
-  it('Should return all styles', () => {
+  it('Should only enumirate `styles` objects!', () => {
     const received = main
 
     const expected = {
@@ -799,7 +799,7 @@ describe('Test `main` feature:', () => {
     })
   })
 
-  // converter
+  // converters
 
   describe('Test `ansi256ToAnsi` converter:', () => {
     const ansiStyles = main as AnsiStyles
@@ -969,7 +969,7 @@ describe('Test `main` feature:', () => {
     })
   })
 
-  // names
+  // style names
 
   describe('Test style names:', () => {
     it('Should return modifier names when `modifierNames` is selected!', () => {

@@ -1,9 +1,11 @@
 import ESCAPE from './ESCAPE'
 
 describe('Test `ESCAPE` constant:', () => {
-  it('Should return `ESCAPE` constant!', () => {
-    const received = ESCAPE
-    const expected = '\u001B['
-    expect(received).toEqual(expected)
+  it('Should be a string!', () => {
+    expect(typeof ESCAPE).toBe('string')
+  })
+
+  it('Value should be `"\\u001B["`!', () => {
+    expect(ESCAPE).toBe('\u001B[')
   })
 })

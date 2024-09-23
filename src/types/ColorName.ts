@@ -1,5 +1,4 @@
-import type ForegroundColorName from './ForegroundColorName'
-import type BackgroundColorName from './BackgroundColorName'
+import type { ForegroundColorName, BackgroundColorName } from '../styles'
 
 /**
  * Basic color names. The combination of foreground and background color names.

@@ -53,4 +53,9 @@ const modifier = {
 
 export type Modifier = typeof modifier
 
+/**
+ * Basic modifier names.
+ */
+export type ModifierName = keyof Modifier
+
 export default modifier

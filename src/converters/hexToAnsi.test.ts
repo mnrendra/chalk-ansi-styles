@@ -1,3 +1,6 @@
+import './ansi256ToAnsi.test'
+import './rgbToAnsi256.test'
+
 import hexToAnsi from './hexToAnsi'
 
 describe('Test `hexToAnsi` converter:', () => {

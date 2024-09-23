@@ -1,6 +1,6 @@
 import type { LAYER } from '../consts'
 
-export type Layer =
+type Layer =
 | typeof LAYER['foreground']
 | typeof LAYER['background']
 

@@ -1,7 +1,11 @@
 import type {
+  Modifier,
   ModifierName,
   ForegroundColorName,
-  BackgroundColorName,
+  BackgroundColorName
+} from './styles'
+
+import type {
   ColorName
 } from './types'
 
@@ -22,19 +26,19 @@ import {
 } from './utils'
 
 import {
+  ansi256ToAnsi,
+  hexToAnsi,
+  hexToAnsi256,
+  hexToRgb,
+  rgbToAnsi,
+  rgbToAnsi256
+} from './converters'
+
+import {
   modifier,
   foregroundColor,
   backgroundColor
 } from './styles'
-
-import {
-  rgbToAnsi256,
-  hexToRgb,
-  hexToAnsi256,
-  ansi256ToAnsi,
-  rgbToAnsi,
-  hexToAnsi
-} from './converters'
 
 /**
  * ANSI color styles.
@@ -47,9 +51,7 @@ const styles = {
 
 export type Styles = typeof styles
 
-// Define private style-groups properties.
-
-export type Modifier = typeof modifier
+// Define private `modifier` group.
 
 Object.defineProperty(styles, 'modifier', {
   value: modifier,
@@ -58,7 +60,9 @@ Object.defineProperty(styles, 'modifier', {
   configurable: false
 })
 
-export const color = {
+// Define private `color` group.
+
+const color = {
   ...foregroundColor,
   close: toAnsi16(FOREGROUND_COLOR_CLOSE),
   ansi: toAnsi16,
@@ -75,7 +79,9 @@ Object.defineProperty(styles, 'color', {
   configurable: false
 })
 
-export const bgColor = {
+// Define private `bgColor` group.
+
+const bgColor = {
   ...backgroundColor,
   close: toAnsi16(BACKGROUND_COLOR_CLOSE),
   ansi: toAnsi16,
@@ -92,9 +98,9 @@ Object.defineProperty(styles, 'bgColor', {
   configurable: false
 })
 
-// Define private code property.
+// Define private `codes` property.
 
-export const codes = mapCodes({
+const codes = mapCodes({
   ...MODIFIER,
   ...FOREGROUND_COLOR,
   ...BACKGROUND_COLOR
@@ -109,7 +115,7 @@ Object.defineProperty(styles, 'codes', {
   configurable: false
 })
 
-// Define private methods properties.
+// Define private methods.
 
 Object.defineProperty(styles, 'rgbToAnsi256', {
   value: rgbToAnsi256,
@@ -153,7 +159,8 @@ Object.defineProperty(styles, 'hexToAnsi', {
   configurable: false
 })
 
-// Names
+// Export style names.
+
 export const modifierNames = Object.keys(
   modifier
 ) as readonly ModifierName[]
@@ -170,6 +177,25 @@ export const colorNames = [
   ...foregroundColorNames,
   ...backgroundColorNames
 ] as readonly ColorName[]
+
+// Export `AnsiStyles` type.
+
+export type AnsiStyles = Styles & {
+  readonly modifier: Modifier
+  readonly color: Color
+  readonly bgColor: BgColor
+  readonly codes: Codes
+  readonly rgbToAnsi256: typeof rgbToAnsi256
+  readonly hexToRgb: typeof hexToRgb
+  readonly hexToAnsi256: typeof hexToAnsi256
+  readonly ansi256ToAnsi: typeof ansi256ToAnsi
+  readonly rgbToAnsi: typeof rgbToAnsi
+  readonly hexToAnsi: typeof hexToAnsi
+}
+
+// Export `ansiStyles`.
+
+export const ansiStyles = styles as AnsiStyles
 
 // Export `styles` as a default value.
 export default styles

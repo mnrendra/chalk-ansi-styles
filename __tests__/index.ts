@@ -1,11 +1,10 @@
-import type { AnsiStyles } from './main'
-
 import index, {
+  type AnsiStyles,
   modifierNames,
   foregroundColorNames,
   backgroundColorNames,
   colorNames
-} from '.'
+} from '..'
 
 describe('Test all features:', () => {
   it('Should only have modifier, foreground, and background keys!', () => {

@@ -1,5 +1,4 @@
 # @mnrendra/chalk-ansi-styles
-
 Refactor the [ansi-styles](https://github.com/chalk/ansi-styles) code to **TypeScript** and ensure the output supports both **CommonJS (CJS)** and **ES Modules (ESM)** with mixed exports. This will allow users to `import` or `require` the module without needing to use `.default`.
 
 ## Benefits
@@ -15,7 +14,6 @@ npm i @mnrendra/chalk-ansi-styles
 ```
 
 ## Usage
-
 Using `CommonJS`:
 ```javascript
 const ansiStyles = require('@mnrendra/chalk-ansi-styles')

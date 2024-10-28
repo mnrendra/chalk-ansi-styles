@@ -1,4 +1,6 @@
 import main, {
+  type AnsiStyles,
+  type Styles,
   ansiStyles,
   modifierNames,
   foregroundColorNames,
@@ -29,12 +31,9 @@ export type {
   StyleName
 } from './types'
 
-export type {
-  AnsiStyles,
-  Styles
-} from './main'
-
 export {
+  type AnsiStyles,
+  type Styles,
   ansiStyles,
   modifierNames,
   foregroundColorNames,

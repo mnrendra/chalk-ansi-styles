@@ -6,18 +6,11 @@ export default [
   {
     external: (id) => !/^[./]/.test(id),
     input: 'src/index.ts',
-    output: [
-      {
-        file: 'dist/index.js',
-        format: 'cjs',
-        sourcemap: true
-      },
-      {
-        file: 'dist/index.mjs',
-        format: 'es',
-        sourcemap: true
-      }
-    ],
+    output: {
+      file: 'dist/index.js',
+      format: 'cjs',
+      sourcemap: true
+    },
     plugins: [
       esbuild({ minify: true }),
       mixeport({ minify: true })

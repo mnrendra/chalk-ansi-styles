@@ -464,7 +464,7 @@ Contributions are always welcome! Please open discussions [here](https://github.
 ## Special Thanks 🙇
 - [sindresorhus](https://github.com/sindresorhus) for creating the [original source code](https://github.com/chalk/ansi-styles).
 - [Qix-](https://github.com/Qix-) for being the active maintainer of the [original source code](https://github.com/chalk/ansi-styles).
-- and all [contributors](https://github.com/chalk/supports-color/graphs/contributors) who contributed to the original source code.
+- and all [contributors](https://github.com/chalk/ansi-styles/graphs/contributors) who contributed to the original source code.
 
 ## License
 [MIT](https://github.com/mnrendra/chalk-ansi-styles/blob/HEAD/LICENSE)

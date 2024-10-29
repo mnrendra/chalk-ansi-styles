@@ -1,12 +1,16 @@
 # @mnrendra/chalk-ansi-styles
-Refactor the [ansi-styles](https://github.com/chalk/ansi-styles) code to **TypeScript** and ensure the output supports both **CommonJS (CJS)** and **ES Modules (ESM)** with mixed exports. This will allow users to `import` or `require` the module without needing to use `.default`.
+Refactored [ansi-styles](https://github.com/chalk/ansi-styles) code to support both **CommonJS (CJS)** and **ES Modules (ESM)** with mixed exports. This allows users to `import` or `require` the module without needing to access the `.default` property.
 
 ## Benefits
 - ✅ Supports both **CommonJS (CJS)** and **ES Modules (ESM)**
-- ✅ Mixed exports (No need to call `.default` to get the default value)
+- ✅ Mixed exports (no need to access `.default` for default value)
 - ✅ Minified distribution package
 - ✅ Well-tested (100% code coverage)
-- ✅ **TypeScript** source code for development
+- ✅ **TypeScript** source code for easier development
+
+## Reference
+Refactored from the [original source code](https://github.com/chalk/ansi-styles) since version [v6.2.1](https://github.com/chalk/ansi-styles/releases/tag/v6.2.1), commit [7e35811](https://github.com/chalk/ansi-styles/commit/7e358113b85bc9f3cf3512d2ae865748fe12d88d).<br/>
+*This module will be kept updated with the original source code; contributions are welcome. 🙏*
 
 ## Install
 ```bash
@@ -133,24 +137,24 @@ console.log(backgroundColorNames) // It will print:
 
 console.log(colorNames) // It will print:
 // [
-//   'bgBlack',
-//   'bgRed',
-//   'bgGreen',
-//   'bgYellow',
-//   'bgBlue',
-//   'bgMagenta',
-//   'bgCyan',
-//   'bgWhite',
-//   'bgGray',
-//   'bgGrey',
-//   'bgBlackBright',
-//   'bgRedBright',
-//   'bgGreenBright',
-//   'bgYellowBright',
-//   'bgBlueBright',
-//   'bgMagentaBright',
-//   'bgCyanBright',
-//   'bgWhiteBright'
+//   'black',
+//   'red',
+//   'green',
+//   'yellow',
+//   'blue',
+//   'magenta',
+//   'cyan',
+//   'white',
+//   'gray',
+//   'grey',
+//   'blackBright',
+//   'redBright',
+//   'greenBright',
+//   'yellowBright',
+//   'blueBright',
+//   'magentaBright',
+//   'cyanBright',
+//   'whiteBright'
 //   'bgBlack',
 //   'bgRed',
 //   'bgGreen',
@@ -333,24 +337,24 @@ console.log(backgroundColorNames) // It will print:
 
 console.log(colorNames) // It will print:
 // [
-//   'bgBlack',
-//   'bgRed',
-//   'bgGreen',
-//   'bgYellow',
-//   'bgBlue',
-//   'bgMagenta',
-//   'bgCyan',
-//   'bgWhite',
-//   'bgGray',
-//   'bgGrey',
-//   'bgBlackBright',
-//   'bgRedBright',
-//   'bgGreenBright',
-//   'bgYellowBright',
-//   'bgBlueBright',
-//   'bgMagentaBright',
-//   'bgCyanBright',
-//   'bgWhiteBright'
+//   'black',
+//   'red',
+//   'green',
+//   'yellow',
+//   'blue',
+//   'magenta',
+//   'cyan',
+//   'white',
+//   'gray',
+//   'grey',
+//   'blackBright',
+//   'redBright',
+//   'greenBright',
+//   'yellowBright',
+//   'blueBright',
+//   'magentaBright',
+//   'cyanBright',
+//   'whiteBright'
 //   'bgBlack',
 //   'bgRed',
 //   'bgGreen',
@@ -460,6 +464,7 @@ Contributions are always welcome! Please open discussions [here](https://github.
 ## Special Thanks 🙇
 - [sindresorhus](https://github.com/sindresorhus) for creating the [original source code](https://github.com/chalk/ansi-styles).
 - [Qix-](https://github.com/Qix-) for being the active maintainer of the [original source code](https://github.com/chalk/ansi-styles).
+- and all [contributors](https://github.com/chalk/supports-color/graphs/contributors) who contributed to the original source code.
 
 ## License
 [MIT](https://github.com/mnrendra/chalk-ansi-styles/blob/HEAD/LICENSE)
